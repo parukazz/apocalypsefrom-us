@@ -2,10 +2,7 @@ import plugin from "tailwindcss/plugin";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       container: {
@@ -31,7 +28,7 @@ export default {
         },
       },
       fontFamily: {
-        clashgrotesk: "Clash Grotesk",
+        clashgrotesk: "var(--font-grotesk)",
         inter: "var(--font-inter)",
       },
     },
@@ -61,8 +58,7 @@ export default {
             {},
         },
         ".p-italic": {
-          "@apply italic text-[1.25rem] leading-[28px]":
-            {},
+          "@apply italic text-[1.25rem] leading-[28px]": {},
         },
         ".p-button": {
           "@apply font-medium text-[1.125rem] tracking-[-0.5px] leading-[1.4em]":
@@ -77,40 +73,31 @@ export default {
             {},
         },
         ".p-s-regular": {
-          "@apply text-[0.875rem] leading-[1.6em]":
-            {},
+          "@apply text-[0.875rem] leading-[1.6em]": {},
         },
         ".p-l-bold": {
-          "@apply font-bold text-[1.25rem] leading-[1.2em]":
-            {},
+          "@apply font-bold text-[1.25rem] leading-[1.2em]": {},
         },
         ".p-l-medium": {
-          "@apply font-medium text-[1.25rem] leading-[1.2em]":
-            {},
+          "@apply font-medium text-[1.25rem] leading-[1.2em]": {},
         },
         ".p-l-regular": {
-          "@apply text-[1.25rem] leading-[1.4em]":
-            {},
+          "@apply text-[1.25rem] leading-[1.4em]": {},
         },
         ".p-bold": {
-          "@apply text-[1rem] leading-[1.2em]":
-            {},
+          "@apply text-[1rem] leading-[1.2em]": {},
         },
         ".p-medium": {
-          "@apply font-medium text-[1rem] leading-[1.8em]":
-            {},
+          "@apply font-medium text-[1rem] leading-[1.8em]": {},
         },
         ".p-regular": {
-          "@apply text-[1rem] leading-[1.8em]":
-            {},
+          "@apply text-[1rem] leading-[1.8em]": {},
         },
         ".border-stroke": {
-          "@apply border-2 border-zinc-800":
-            {},
+          "@apply border-2 border-zinc-800": {},
         },
         ".bg-gradient-lime": {
-          "@apply bg-gradient-to-b from-lime to-green":
-            {},
+          "@apply bg-gradient-to-b from-lime to-green": {},
         },
         ".social-list": {
           "@apply bg-white bg-opacity-5 rounded-full p-4 border-2 border-white border-opacity-10 hover:bg-white hover:text-dark transition duration-300 ease-in-out hover:scale-90":
@@ -124,4 +111,4 @@ export default {
       });
     }),
   ],
-}
+};
